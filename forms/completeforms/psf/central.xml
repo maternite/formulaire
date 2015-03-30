@@ -222,7 +222,7 @@
     <label lang="fr">Obstétrique</label>
     <icon>__theme__/stethoscope.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
-      <MedForm name="Maternity::Obstetrics::Constulation">
+      <MedForm name="Maternity::Obstetrics::Consultation">
         <label lang="xx">Consultations</label>
         <label lang="en">Consultations</label>
         <icon>__theme__/stethoscope.png</icon>
