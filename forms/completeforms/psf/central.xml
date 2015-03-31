@@ -71,7 +71,7 @@
 
   <MedForm name="Maternity::Pediatrics">
     <label lang="xx">Pediatrics</label>
-    <label lang="en">Pédiatrie</label>
+    <label lang="fr">Pédiatrie</label>
     <icon>__theme__/stethoscope.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
 
