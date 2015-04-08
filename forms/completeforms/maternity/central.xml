@@ -75,7 +75,7 @@
     <icon>__theme__/stethoscope.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
 
-    <file>__subForms__/generic/soap_with_biomeasurements/central.xml</file>
+    <file>__subForms__/maternity/generic/soap_with_biomeasurements/central.xml</file>
 
     <MedForm name="Maternity::Pediatrics::Reports">
       <label lang="xx">Consultation reports</label>
@@ -117,7 +117,7 @@
 
       </MedForm>
 
-      <file>__subForms__/generic/labtest_results/central.xml</file>
+      <file>__subForms__/maternity/generic/labtest_results/central.xml</file>
 
     <MedForm name="Maternity::Pediatrics::Results">
       <label lang="xx">Various reports</label>
@@ -241,6 +241,6 @@
     </Item>                                                                     
   </MedForm>
 
-<file>__subForms__/generic/patientfilesynthesis/central.xml</file>            
+  <file>__subForms__/maternity/generic/patientfilesynthesis/central.xml</file>            
 
 </FreeMedForms>

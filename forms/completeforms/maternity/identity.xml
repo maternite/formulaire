@@ -40,6 +40,6 @@
     <icon>__theme__/identity.png</icon>
   </Page>
 
-  <file>__subForms__/generic/fullidentity_maternity/central.xml</file>
+  <file>__subForms__/maternity/generic/fullidentity_maternity/central.xml</file>
 
 </FreeMedForms>
