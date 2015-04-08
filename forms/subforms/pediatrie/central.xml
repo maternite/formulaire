@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+<formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>0.9.0</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Consultations pédiatriques</description>
+  <description lang="xx">Consultations pédiatriques</description>
+  <category lang="xx">Consultations</category>
+  <category lang="fr">Consultations</category>
+  <specialties lang="fr">Consultations</specialties>
+  <specialties lang="xx">Consultations</specialties>
+</formdescription>
+
+<MedForm> <!-- Consultation Pédiatrique -->
+  <name>Consultations_pédiatriquesFormSample</name>
+  <label>Consultations_pédiatriques examples</label>
+  <icon>pediatrie.png</icon>
+  <type>form</type>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>samples</categorie>
+
+  <label lang="fr">Consultations pédiatriques</label>
+  <categorie lang="fr">samples</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Petite description ici</description>
+  <bibliography lang="fr">Bibliographie ici</bibliography>
+  <license lang="fr">Termes de la license</license>
+
+  <column>1</column>
+  <option>compact</option>
+
+    <Item>
+     <name>sampleHelp_01</name>
+     <type>helptext</type>
+     <label>Croissance saturo-pondérale</label>
+    </Item>
+	
+	<Item>
+    <name>sampleGroup_01</name>
+    <type>group</type>
+    <option>compact</option>
+	
+	<Item type="measurement" name="weight_01">
+      <label lang="xx">weight</label>
+      <label lang="fr">Poids (g)</label>
+      <options>DontPrintEmptyValues;Weight</options>
+      <default>Kilogramme(s)</default>
+    </Item>
+	<Item type="measurement" name="Height_01">
+      <label lang="xx">Height</label>
+      <label lang="fr">Taille (cm)</label>
+      <options>DontPrintEmptyValues;Length</options>
+      <default>meter</default>
+    </Item>
+	<Item type="measurement" name="Height_02">
+      <label lang="xx">Height</label>
+      <label lang="fr">Périmètre cranien (cm)</label>
+      <options>DontPrintEmptyValues;Length</options>
+      <default>meter</default>
+    </Item>
+	<Item>
+      <name>sampleShort_01</name>
+      <label>Indice de masse corporelle</label>
+      <type>shorttext</type>
+    </Item>
+	
+	</Item>
+	
+	<Item>
+    <name>sampleGroup_02</name>
+    <type>group</type>
+    <option>compact</option>
+	<Item>
+     <name>sampleHelp_02</name>
+     <type>helptext</type>
+     <label>Développement psychomoteur</label>
+    </Item>
+	<Item>
+      <name>sampleLong_01</name>
+      <label>Développement psychomoteur</label>
+      <type>longtext</type>
+    </Item>	
+	</Item>
+	
+	<Item>
+    <name>sampleGroup_03</name>
+    <type>group</type>
+    <option>compact</option>
+	<Item>
+     <name>sampleHelp_03</name>
+     <type>helptext</type>
+     <label>Examen somatique</label>
+    </Item>
+	<Item>
+     <name>sampleCombo_01</name>
+     <type>combo</type>
+     <label>Examen somatique</label>
+     <value>
+       <possible id="0">bon</possible>
+       <possible id="1">moyen</possible>
+	   <possible id="2">mauvais</possible>
+       <uuid id="0">bon</uuid>
+       <uuid id="1">moyen</uuid>
+	   <uuid id="2">mauvais</uuid>       
+     </value>
+    </Item>
+	<Item>
+      <name>sampleLong_02</name>
+      <label></label>
+      <type>longtext</type>
+    </Item>		
+	</Item>
+	<Item>
+      <name>sampleLong_03</name>
+      <label>Conseils et recommandations</label>
+      <type>longtext</type>
+    </Item>	
+	<Item>
+      <name>sampleLong_04</name>
+      <label>Prescriptions</label>
+      <type>longtext</type>
+    </Item>	
+   
+</MedForm>
+
+</FreeMedForms>
