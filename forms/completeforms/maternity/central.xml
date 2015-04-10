@@ -8,8 +8,9 @@
     <authors>Eric Maeker, MD</authors>
     <version>test</version>
     <fmfv>0.9.6</fmfv>
-    <cdate>2012-09-03</cdate>
+    <cdate>2015-04-06</cdate> <!-- Modify by NYA -->
     <lmdate>2015-03-23</lmdate>
+	
     <icon>generalpractitioner.png</icon>
     <weblink></weblink>
     <bibliography/>
@@ -72,164 +73,35 @@
   <MedForm name="Maternity::Pediatrics">
     <label lang="xx">Pediatrics</label>
     <label lang="fr">Pédiatrie</label>
-    <icon>__theme__/stethoscope.png</icon>
+    <icon>pediatrie.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
-
-    <file>__subForms__/maternity/generic/soap_with_biomeasurements/central.xml</file>
-
-    <MedForm name="Maternity::Pediatrics::Reports">
-      <label lang="xx">Consultation reports</label>
-      <label lang="fr">Compte-rendus de consultation</label>
-      <icon>__theme__/edit.png</icon>
-      <options>DontPrintEmptyValues</options>
-      <file type="htmlprintmask">./html/xx/padtools_consultation_results_mask.html</file>
-      <file type="htmlexportmask">./html/xx/padtools_consultation_results_mask.html</file>
-
-      <Item type="texteditor" name="Maternity::Pediatrics::Reports::Textual">
-        <label lang="xx">Textual results</label>
-        <label lang="fr">Résultats textuels</label>
-        <tooltip lang="xx">You can add here results from XRay, specialists consultations...</tooltip>
-        <tooltip lang="fr">Vous pouvez mettre ici les résultats de radiologie, consultations spécialisées...</tooltip>
-        <options>FullEditor;WithIO;WithTable;Expanded;DontPrintEmptyValues;PrintDuplicata</options>
-        <papers>Generic</papers>
-        <hprim>true</hprim>
-      </Item>
-
-      </MedForm>
-
-      <MedForm name="Maternity::Pediatrics::LabResults">
-        <label lang="xx">Lab-tests results (textual)</label>
-        <label lang="fr">Résultats de biologie (textuels)</label>
-        <icon>__theme__/labtest.png</icon>
-        <options>DontPrintEmptyValues</options>
-        <file type="htmlprintmask">./html/xx/padtools_consultation_results_mask.html</file>
-        <file type="htmlexportmask">./html/xx/padtools_consultation_results_mask.html</file>
-
-        <Item type="texteditor" name="Maternity::Pediatrics::LabResults::Textual">
-          <label lang="xx">Textual results</label>
-          <label lang="fr">Résultats textuels</label>
-          <tooltip lang="xx">You can add here results from XRay, specialists consultations...</tooltip>
-          <tooltip lang="fr">Vous pouvez mettre ici les résultats de radiologie, consultations spécialisées...</tooltip>
-          <options>FullEditor;WithIO;WithTable;Expanded;DontPrintEmptyValues;PrintDuplicata</options>
-          <papers>Generic</papers>
-          <hprim>true</hprim>
-        </Item>
-
-      </MedForm>
-
-      <file>__subForms__/maternity/generic/labtest_results/central.xml</file>
-
-    <MedForm name="Maternity::Pediatrics::Results">
-      <label lang="xx">Various reports</label>
-      <label lang="fr">Compte-rendus divers</label>
-      <icon>__theme__/edit.png</icon>
-      <options>DontPrintEmptyValues</options>
-      <file type="htmlprintmask">./html/xx/padtools_consultation_results_mask.html</file>
-      <file type="htmlexportmask">./html/xx/padtools_consultation_results_mask.html</file>
-
-      <Item type="texteditor" name="Maternity::Pediatrics::Results::Textual">
-        <label lang="xx">Textual results</label>
-        <label lang="fr">Résultats textuels</label>
-        <options>FullEditor;WithIO;WithTable;Expanded;DontPrintEmptyValues;PrintDuplicata</options>
-        <papers>Generic</papers>
-        <hprim>true</hprim>
-      </Item>
-
-      </MedForm>
-
-  <MedForm name="Maternity::Prescr">
-    <label>Prescriptions</label>
-    <icon>__theme__/edit.png</icon>
-    <options>NoEpisode;DontPrintEmptyValues</options>
-
-    <MedForm name="Maternity::Prescr::Text">
-      <label lang="xx">Textual prescriptions</label>
-      <label lang="fr">Prescriptions textuelles</label>
-      <icon>__theme__/edit.png</icon>
-      <options>DontPrintEmptyValues</options>
-      <file type="htmlprintmask">./html/xx/padtools_textual_prescription_mask.html</file>
-      <file type="htmlexportmask">./html/xx/padtools_textual_prescription_mask.html</file>
-
-      <Item name="FileNavigationButton" type="buttonmenupath">
-        <label lang="xx">Select a file (replacement with confirmation)</label>
-        <label lang="fr">Sélectionnez un fichier (replacement avec confirmation)</label>
-        <tooltip lang="xx">Select a file and the its content will be included in the text editor</tooltip>
-        <tooltip lang="fr">Sélectionnez un fichier et son contenu sera insérer dans l'éditeur de texte</tooltip>
-        <icon>__theme__/fileopen.png</icon>
-        <path>__userDocuments__</path>
-        <filter>*.htm;*.html;*.txt;*.rtf</filter>
-        <populate>Maternity::Prescr::Text::Content</populate>
-      </Item>
-
-      <Item type="texteditor" name="Maternity::Prescr::Text::Content">
-        <label lang="xx">Textual prescription</label>
-        <label lang="fr">Prescription textuelle</label>
-        <options>FullEditor;DontPrintEmptyValues;PrintDuplicata;expanded</options>
-        <papers>Prescription</papers>
-      </Item>
-    </MedForm>
-
-    <file>__subForms__/prescriptions/lab_assistant/central.xml</file>
-
-    <MedForm name="Maternity::Prescr::Drugs">
-      <label lang="xx">Drugs prescriptions</label>
-      <label lang="fr">Prescriptions médicamenteuses</label>
-      <icon>__theme__/drugs.png</icon>
-      <options>DontPrintEmptyValues</options>
-      <file type="htmlprintmask">./html/xx/padtools_prescription_drugs_mask.html</file>
-      <file type="htmlexportmask">./html/xx/padtools_prescription_drugs_mask.html</file>
-
-      <Item type="prescriptor" name="Maternity::Prescr::Drugs::Content">
-        <label lang="xx">Therapeutic prescription</label>
-        <label lang="fr">Prescription médicamenteuse</label>
-        <options>AddChronicTherapyButton;DontPrintEmptyValues</options>
-      </Item>
-    </MedForm>
-
+<file>__subForms__/maternity/pediatrie/central.xml</file>
   </MedForm>
-
-  </MedForm> <!-- Pediatrics --> 
 
   <MedForm name="Maternity::Gynecology">
     <label lang="xx">Gynecology</label>
     <label lang="fr">Gynécologie</label>
-    <icon>__theme__/stethoscope.png</icon>
+    <icon>gyneco.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
-    
-    <MedForm name="Maternity::Gynecology::Consultation">
-    <label lang="xx">Consultations</label>
-    <label lang="en">Consultations</label>
-    <icon>__theme__/stethoscope.png</icon>
-    <options>NoEpisode;DontPrintEmptyValues</options>
-    </MedForm>
+    <file>__subForms__/maternity/gynecology/central.xml</file>
   </MedForm>
-
+     
   <MedForm name="Maternity::Anesthesiology">
     <label lang="xx">Anesthesiology</label>
     <label lang="fr">Anesthésie</label>
-    <icon>__theme__/stethoscope.png</icon>
+    <icon>anesthesie.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
-      <MedForm name="Maternity::Anesthesiology::Consultation">
-        <label lang="xx">Consultations</label>
-        <label lang="en">Consultations</label>
-        <icon>__theme__/stethoscope.png</icon>
-        <options>NoEpisode;DontPrintEmptyValues</options>
-      </MedForm>
+      <file>__subForms__/maternity/anesthesy/central.xml</file>
   </MedForm>
-  
+     
   <MedForm name="Maternity::Obtetrics">
     <label lang="xx">Obstetrics</label>
     <label lang="fr">Obstétrique</label>
-    <icon>__theme__/stethoscope.png</icon>
+    <icon>osbtetric.png</icon>
     <options>NoEpisode;DontPrintEmptyValues</options>
-      <MedForm name="Maternity::Obstetrics::Consultation">
-        <label lang="xx">Consultations</label>
-        <label lang="en">Consultations</label>
-        <icon>__theme__/stethoscope.png</icon>
-        <options>NoEpisode;DontPrintEmptyValues</options>
-      </MedForm>
+     <file>__subForms__/maternity/obstetric/central.xml</file>
   </MedForm>
-
+     
   <MedForm name="Maternity::ICD10">                                             
     <label lang="xx">ICD10 coding</label>                                       
     <label lang="fr">Codes CIM10</label>                                        
@@ -240,7 +112,6 @@
     <options>DontPrintEmptyValues</options>                                   
     </Item>                                                                     
   </MedForm>
-
-  <file>__subForms__/maternity/generic/patientfilesynthesis/central.xml</file>            
+     <file>__subForms__/maternity/patientfilesynthesis/central.xml</file>            
 
 </FreeMedForms>
