@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+
+<FreeMedForms>
+
+  <formdescription>
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD</authors>
+    <version>test</version>
+    <fmfv>0.9.6</fmfv>
+    <cdate>2012-09-03</cdate>
+    <lmdate>2015-03-23</lmdate>
+    <icon>generalpractitioner.png</icon>
+    <weblink/>
+    <bibliography/>
+
+    <!-- Translatable values -->
+    <license>GPLv3</license>
+    <description lang="fr">Dossier médical maternité</description>
+    <description lang="xx">Maternity care patient file</description>
+    <category lang="xx">Maternity care</category>
+    <category lang="fr">Maternité</category>
+    <specialties lang="fr">Maternité</specialties>
+    <specialties lang="xx">Maternity care</specialties>
+    <updateinfo>
+      <updateversion from="0.7.0" to="0.7.2">
+        <text lang="fr">Faute de frappe dans les catégories des antécédents&lt;br />Ajout des identifiants aux catégories des antécédents.</text>
+        <text lang="en">Typo in PHMx categories&lt;br />Adding uuid to PMHx categories.</text>
+      </updateversion>
+    </updateinfo>
+
+  </formdescription>
+
+  <Page uuid="identity">
+    <label lang="fr">Identité</label>
+    <label lang="xx">Identity</label>
+    <tooltip lang="fr">Identité patient</tooltip>
+    <tooltip lang="xx">Patient identity</tooltip>
+    <priority>890</priority>
+    <icon>__theme__/identity.png</icon>
+  </Page>
+
+  <file>__subForms__/maternity/generic/fullidentity_maternity/central.xml</file>
+
+</FreeMedForms>

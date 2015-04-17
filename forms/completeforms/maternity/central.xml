@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+
+<FreeMedForms>
+
+  <formdescription>
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD</authors>
+    <version>test</version>
+    <fmfv>0.9.6</fmfv>
+    <cdate>2015-04-06</cdate> <!-- Modify by NYA -->
+    <lmdate>2015-03-23</lmdate>
+	
+    <icon>generalpractitioner.png</icon>
+    <weblink></weblink>
+    <bibliography/>
+
+    <!-- Translatable values -->
+    <license>GPLv3</license>
+    <description lang="fr">Dossier médical maternité</description>
+    <description lang="xx">Maternity care patient file</description>
+    <category lang="xx">Maternity care</category>
+    <category lang="fr">Maternité</category>
+    <specialties lang="fr">Maternité</specialties>
+    <specialties lang="xx">Maternity care</specialties>
+    <updateinfo>
+        <updateversion from="0.8.4" to="0.9.6">
+            <text lang="fr">
+            Réécriture du formulaire gp1_basic1_multimodes pour l'adapter à une maternité.
+            </text>
+            <text lang="fr">
+            Rewriting of gp1_basic1_multimodes form to adapt it to a maternity care center.
+            </text>
+        </updateversion>
+        <updateversion from="0.8.2" to="0.8.4">
+            <text lang="fr">
+            Ajout des masques HTML d'exportation et d'impression plus modernes.
+            Ajout de la synthèse du dossier.
+            Ajout d'un bouton de navigation dans les fichiers pour les inclure rapidement dans l'éditeur de texte.
+            Refonte de la partie consultation.
+            Ajout des informations d'importation HPRIM.
+            </text>
+            <text lang="en">
+            Adding modern HTML export and print masks.
+            Adding patient file synthesis.
+            Adding a button to easily navigate through the local files and to quickly include them in a text editor.
+            Refactoring of the consultation part.
+            </text>
+        </updateversion>
+        <updateversion from="0.8.0" to="0.8.2">
+            <text lang="fr">
+            Définition du jeux de documents utilisateur pour l'impression des prescriptions textuelles.
+            Ajout des valeurs biométriques de base dans la partie POMR (en utilisant un sous-formulaire).
+            Ajout de l'assistant de prescription d'examen biologique
+            </text>
+            <text lang="en">
+            Defining user documents to use for the print process of the textual prescription text editor.
+            Adding basic biometric measurements in the SOAP form (using a sub-form).
+            Adding lab test prescription assistant
+            </text>
+        </updateversion>
+        <updateversion from="0.8.0" to="0.7.2">
+            <text lang="fr">Faute de frappe dans les catégories des antécédents&lt;br />Ajout des identifiants aux catégories des antécédents.</text>
+            <text lang="en">Typo in PHMx categories&lt;br />Adding uuid to PMHx categories.</text>
+        </updateversion>
+    </updateinfo>
+
+  </formdescription>
+
+    <!-- Items for the HPRIM data importation -->
+    <hprim>Maternity::Consultation::Results::Textual;Maternity::Consultation::LabResults::Textual</hprim>
+
+  <MedForm name="Maternity::Pediatrics">
+    <label lang="xx">Pediatrics</label>
+    <label lang="fr">Pédiatrie</label>
+    <icon>pediatrie.png</icon>
+    <options>NoEpisode;DontPrintEmptyValues</options>
+<file>__subForms__/maternity/pediatrie/central.xml</file>
+  </MedForm>
+
+  <MedForm name="Maternity::Gynecology">
+    <label lang="xx">Gynecology</label>
+    <label lang="fr">Gynécologie</label>
+    <icon>gyneco.png</icon>
+    <options>NoEpisode;DontPrintEmptyValues</options>
+    <file>__subForms__/maternity/gynecology/central.xml</file>
+  </MedForm>
+     
+  <MedForm name="Maternity::Anesthesiology">
+    <label lang="xx">Anesthesiology</label>
+    <label lang="fr">Anesthésie</label>
+    <icon>anesthesie.png</icon>
+    <options>NoEpisode;DontPrintEmptyValues</options>
+      <file>__subForms__/maternity/anesthesy/central.xml</file>
+  </MedForm>
+     
+  <MedForm name="Maternity::Obtetrics">
+    <label lang="xx">Obstetrics</label>
+    <label lang="fr">Obstétrique</label>
+    <icon>osbtetric.png</icon>
+    <options>NoEpisode;DontPrintEmptyValues</options>
+     <file>__subForms__/maternity/obstetric/central.xml</file>
+  </MedForm>
+     
+  <MedForm name="Maternity::ICD10">                                             
+    <label lang="xx">ICD10 coding</label>                                       
+    <label lang="fr">Codes CIM10</label>                                        
+    <options>DontPrintEmptyValues</options>                                     
+    <Item type="icd" name="Maternity::ICD10::Content">                          
+    <label lang="xx">ICD10 coding</label>                                     
+    <label lang="fr">Codes CIM10</label>                                      
+    <options>DontPrintEmptyValues</options>                                   
+    </Item>                                                                     
+  </MedForm>
+     <file>__subForms__/maternity/patientfilesynthesis/central.xml</file>            
+
+</FreeMedForms>
