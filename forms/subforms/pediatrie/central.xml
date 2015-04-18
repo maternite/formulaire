@@ -52,21 +52,21 @@
     <type>group</type>
     <option>compact</option>
 	
-	<Item type="measurement" name="weight_01">
+	<Item type="measurement" name="Weight">
       <label lang="xx">weight</label>
       <label lang="fr">Poids (g)</label>
       <options>DontPrintEmptyValues;Weight</options>
       <default>Kilogramme(s)</default>
     </Item>
-	<Item type="measurement" name="Height_01">
+	<Item type="measurement" name="Height">
       <label lang="xx">Height</label>
       <label lang="fr">Taille (cm)</label>
       <options>DontPrintEmptyValues;Length</options>
       <default>meter</default>
     </Item>
-	<Item type="measurement" name="Height_02">
+	<Item type="measurement" name="HeadCircumference">
       <label lang="xx">Height</label>
-      <label lang="fr">Périmètre cranien (cm)</label>
+      <label lang="fr">Périmètre crânien (cm)</label>
       <options>DontPrintEmptyValues;Length</options>
       <default>meter</default>
     </Item>
