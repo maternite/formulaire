@@ -5,23 +5,23 @@
 
   <formdescription>
     <!-- Non translatable values -->
-    <authors>Eric Maeker, MD</authors>
+    <authors>Pinguet Jérôme</authors>
     <version>test</version>
     <fmfv>0.9.6</fmfv>
     <cdate>2012-09-03</cdate>
-    <lmdate>2015-03-23</lmdate>
+    <lmdate>2015-04-28</lmdate>
     <icon>generalpractitioner.png</icon>
     <weblink></weblink>
     <bibliography/>
 
     <!-- Translatable values -->
     <license>GPLv3</license>
-    <description lang="fr">Dossier médical maternité</description>
-    <description lang="xx">Maternity care patient file</description>
-    <category lang="xx">Maternity care</category>
-    <category lang="fr">Maternité</category>
-    <specialties lang="fr">Maternité</specialties>
-    <specialties lang="xx">Maternity care</specialties>
+    <description lang="fr">Dossier médical maternité formulaire</description>
+    <description lang="xx">Maternity care patient file formulaire</description>
+    <category lang="xx">Maternity care formulaire</category>
+    <category lang="fr">Maternité formulaire</category>
+    <specialties lang="fr">Maternité formulaire</specialties>
+    <specialties lang="xx">Maternity care formulaire</specialties>
     <updateinfo>
         <updateversion from="0.8.4" to="0.9.6">
             <text lang="fr">
