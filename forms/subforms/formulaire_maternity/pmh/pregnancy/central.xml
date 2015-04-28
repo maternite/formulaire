@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>test</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Gyneco</description>
+  <description lang="xx">Obstetric</description>
+  <category lang="xx">Consultation</category>
+  <category lang="fr">Consultation</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+
+  </formdescription>
+
+<MedForm type="form" name="Maternity::PMHx::Pregnancy">
+  <label lang="fr">Grossesse actuelle :</label>
+  <label lang="xx">Running Pregnancy  :</label>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>PMHx</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Antécédents Gynéco-Obstetric</description>
+  <description lang="xx">PMHx Gyneco-Obstetric</description>
+  <bibliography lang="fr">à remplir</bibliography>
+  <license lang="fr">Termes de la license</license>
+  <options>UseFormNameAsNameSpace</options>
+  <column>2</column>
+  <option>compact</option>
+  <Item type="date" name="DDR">
+	  <label options="labelontop" lang="fr">Date de dernière règle</label>
+	  <label options="labelontop" lang="xx">Last period</label>
+  </Item>
+  <Item type="date" name="DDG">
+	  <label options="labelontop" lang="fr">Date de debut grossesse</label>
+	  <label options="labelontop" lang="xx">DDG</label>
+  </Item>
+  <Item type="date" name="DPA">
+	  <label options="labelontop" lang="fr">Date prévue accouchement</label>
+	  <label options="labelontop" lang="xx">DPA</label>
+  </Item>
+  <Item type="choice" name="Datedeterminee">
+       <value>
+          <possible id="0">DR, Echo inf 12 SA</possible>
+		  <possible id="0">Echo inf 12 SA</possible>
+          <possible id="1">Incertaine</possible>          
+          <uuid id="0">DR</uuid>
+		  <uuid id="0">Echo inf 12 SA</uuid>
+          <uuid id="1">Incertaine</uuid>
+       </value>
+  </Item>
+  <Item type="measurement" name="Weight">
+      <label options="labelontop" lang="xx">Poids avant la grossesse (kg)</label>
+      <label options="labelontop" lang="fr">Weight (Kg) before pregnancy</label>
+      <options>DontPrintEmptyValues;Weight</options>
+      <default>Kilogramme(s)</default>
+  </Item>
+
+</MedForm>
+   
+</FreeMedForms>
+
+
