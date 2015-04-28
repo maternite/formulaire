@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BaseWidgets::Internal::BaseFormWidget</class>
+ <widget class="QWidget" name="BaseWidgets::Internal::BaseFormWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>459</width>
+    <height>178</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="0">
+      <widget class="QLabel" name="paperRecordLabel">
+       <property name="text">
+        <string>paperRecordNumberLabel</string>
+       </property>
+       <property name="buddy">
+        <cstring>paperRecordEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="paperRecordConsultationOnlyLabel">
+       <property name="text">
+        <string>hasOnlyConsultationPaperRecord</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="paperRecordConsultationOnlyLayout"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="paperRecordEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="cielCodeLabel">
+       <property name="text">
+        <string>Ciel code</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QHBoxLayout" name="CielCodeLayout">
+       <item>
+        <widget class="QLineEdit" name="cielCodeEdit"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
